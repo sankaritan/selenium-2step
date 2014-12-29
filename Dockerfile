@@ -21,7 +21,7 @@ RUN git clone https://github.com/yveshwang/selenium-2step.git selenium-2step/
 RUN cp /workdir/selenium-2step/Xvfb /etc/init.d/.
 RUN update-rc.d Xvfb defaults
 RUN service Xvfb start
-RUN wget http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.1.jar
+RUN wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
 RUN wget http://chromedriver.storage.googleapis.com/2.10/chromedriver_linux64.zip
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN mv *.zip /usr/local/selenium/.
